@@ -9,11 +9,11 @@ This `runner_aws.sh` installs Spacy library for NER
 - `chmod +x runner_aws.sh`
 - `./runner_aws.sh`
 
-#### BERT-NER
+#### BERT-NER [Source](https://github.com/kamalkraj/BERT-NER)
 I run this model on my laptop. 
 This `runner_aws.sh` installs Spacy library for NER
 - `cd server`
 - `chmod +x runner_bert.sh`
 - `./runner_bert.sh`
 
- Pretrained model download from [here](https://1drv.ms/u/s!Auc3VRul9wo5hghurzE47bTRyUeR?e=08seO3)
+ Pretrained model download from [here](https://1drv.ms/u/s!Auc3VRul9wo5hghurzE47bTRyUeR?e=08seO3), unzip archieve and put the folder `out_base` into `BERT-NER`
