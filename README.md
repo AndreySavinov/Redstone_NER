@@ -38,6 +38,7 @@ This `runner_bert.sh` clones BERT-NER and installs prerequirements for it.
 - or
 - `nohup python3 server_bert.py [<port>]` - BERT model, I run it on my laptop, `URL = "http://localhost:80/"`
 - `[<port>]` is optional. `port=80` by default.
+
 Demo IPython notebook is also given in the folder `server`. If server is launched without `nohup`, it is terminated with the closing of terminal.
 
 # Client Running
@@ -45,6 +46,7 @@ Demo IPython notebook is also given in the folder `server`. If server is launche
 - `cd client`
 - `python3 client.py 'message' 'URL'` - Spacy, currently is running on AWS, `URL = "http://3.68.101.138:8080/"`
 - `'message'` and `'URL'` are optional. 
+
 Return the organizations names with/without confidence score. If server is based on BERT model, the confidence score will be returned. If server is based on Spacy model, the confidence score will not be returned. By default, client sends request to the AWS-web-server with spacy
 Demo IPython notebook is also given in the folder `client`.
 
