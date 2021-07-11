@@ -44,7 +44,7 @@ Demo IPython notebook is also given in the folder `server`. If server is launche
 
 - `cd client`
 - `python3 client.py 'message' 'URL'` - Spacy, currently is running on AWS, `URL = "http://3.68.101.138:8080/"`
-- `'message'` and `'URL'` are optional
+- `'message'` and `'URL'` are optional. 
 Return the organizations names with/without confidence score. If server is based on BERT model, the confidence score will be returned. If server is based on Spacy model, the confidence score will not be returned. By default, client sends request to the AWS-web-server with spacy
 Demo IPython notebook is also given in the folder `client`.
 
