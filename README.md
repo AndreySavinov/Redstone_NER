@@ -3,7 +3,7 @@ Simple client-server interface for NER
 # Requirements
 ### Linux 
 #### AWS web-server, Spacy
-Unfortunately, free EC2 instance on AWS does not have enough memoty to install pretrained models.
+Unfortunately, free EC2 instance on AWS does not have enough memory to install pretrained models.
 This `runner_aws.sh` installs Spacy library for NER
 - `cd server`
 - `chmod +x runner_aws.sh`
