@@ -25,13 +25,26 @@ This `runner_bert.sh` clones BERT-NER and installs prerequirements for it.
 - `python3 -m spacy download en_core_web_sm`
 - 
 ##### BERT-NER [Source](https://github.com/kamalkraj/BERT-NER)
- - `git clone https://github.com/kamalkraj/BERT-NER.git` for BERT-NER from the folder `server`
- - `pip install -r requirements.txt` from the folder `BERT-NER`
+- `cd server`
+- `git clone https://github.com/kamalkraj/BERT-NER.git` for BERT-NER from the folder `server`
+- `cd BERT-NER`
+- `pip install -r requirements.txt` from the folder `BERT-NER`
   
  Pretrained model can be downloaded from [here](https://1drv.ms/u/s!Auc3VRul9wo5hghurzE47bTRyUeR?e=08seO3), unzip archieve and put the folder `out_base` into `BERT-NER`
  
 # Server Running
 - `cd server`
-- `python3 server_aws.py [<port>]` - Spacy, currently is running on AWS, `URL = "http://3.68.101.138:8080/"`
+- `nohup python3 server_aws.py [<port>]` - Spacy, currently is running on AWS, `URL = "http://3.68.101.138:8080/"`
 - or
-- `python3 server_bert.py [<port>]` - BERT model, I run it on my laptop, `URL = "http://localhost:80/"`
+- `nohup python3 server_bert.py [<port>]` - BERT model, I run it on my laptop, `URL = "http://localhost:80/"`
+- `[<port>]` is optional. `port=80` by default.
+Demo IPython notebook is also given in the folder `server`. If server is launched without `nohup`, it is terminated with the closing of terminal.
+
+# Client Running
+
+- `cd client`
+- `python3 client.py 'message' 'URL'` - Spacy, currently is running on AWS, `URL = "http://3.68.101.138:8080/"`
+- `'message'` and `'URL'` are optional
+Return the organizations names with/without confidence score. If server is based on BERT model, the confidence score will be returned. If server is based on Spacy model, the confidence score will not be returned. By default, client sends request to the AWS-web-server with spacy
+Demo IPython notebook is also given in the folder `client`.
+
