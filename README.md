@@ -23,7 +23,7 @@ This `runner_bert.sh` clones BERT-NER and installs prerequirements for it.
 ##### Spacy
 - `pip install -U spacy`
 - `python3 -m spacy download en_core_web_sm`
-- 
+
 ##### BERT-NER [Source](https://github.com/kamalkraj/BERT-NER)
 - `cd server`
 - `git clone https://github.com/kamalkraj/BERT-NER.git` for BERT-NER from the folder `server`
