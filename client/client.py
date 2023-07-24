@@ -11,6 +11,7 @@ Usage::
 
 
 import requests
+import numpy
 
 def request_GET(URL = "http://3.68.101.138:8080/"):
     r = requests.get(url=URL)
